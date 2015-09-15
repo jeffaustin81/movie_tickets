@@ -11,4 +11,9 @@ describe('Ticket', function() {
         var testTicket = new Ticket("Iron Man 5", true, 7, 79);
         expect(testTicket.ticketPrice()).to.equal(9);
     });
+
+    it("adjusts the ticket price based on first-run status", function() {
+        var testTicket = new Ticket("Iron Man 5", true, 7, 30);
+        expect(testTicket.ticketPrice()).to.equal(11);
+    });
 });
