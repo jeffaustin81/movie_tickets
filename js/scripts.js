@@ -4,3 +4,10 @@ function Ticket(movieName, firstRun, movieTime, age) {
     this.movieTime = movieTime;
     this.age = age;
 }
+
+Ticket.prototype.ticketPrice = function() {
+    var basePrice = 9;
+    var total = basePrice;
+
+    return total;
+}
