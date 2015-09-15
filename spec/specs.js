@@ -8,7 +8,7 @@ describe('Ticket', function() {
     });
 
     it("adds the ticketPrice method to all contacts", function() {
-        var testTicket = new Ticket("Iron Man 5", false, 7, 79);
+        var testTicket = new Ticket("Iron Man 5", false, 7, 42);
         expect(testTicket.ticketPrice()).to.equal(9);
     });
 
@@ -18,7 +18,12 @@ describe('Ticket', function() {
     });
 
     it("adjusts the ticket price based on matinee status", function() {
-        var testTicket = new Ticket("Iron Man 5", false, 3, 79);
+        var testTicket = new Ticket("Iron Man 5", false, 3, 43);
+        expect(testTicket.ticketPrice()).to.equal(7);
+    });
+
+    it("adjusts the ticket price based on age", function() {
+        var testTicket = new Ticket("Iron Man 5", false, 5, 70);
         expect(testTicket.ticketPrice()).to.equal(7);
     });
 });
