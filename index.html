@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/scripts.js"></script>
+        <title>Movie Tickets</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Movie Tickets</h1>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>Choose a movie:</h2>
+                    <form id="new-ticket">
+                        <div class="form-group">
+                            <label for="movie_title">Movie</label>
+                            <select name="movie_title" id="movie-title" class="form-control">
+                                <option value="Faster and Furioser 22*">Faster and Furioser 22</option>
+                                <option value="Pirates of the Carribbean 8: Johnny Needs a Paycheck*">Pirates of the Carribbean 8: Johnny Needs a Paycheck</option>
+                                <option value="American Pie in the Sky 5">American Pie in the Sky 5</option>
+                                <option value="Tim Burton Doing His Same Old Schtick">Tim Burton Doing His Same Old Schtick</option>
+                                <option value="Super Heavy and Emotional Best Picture Shoe-in">Super Heavy and Emotional Best Picture Shoe-in</option>
+                                <option value="Low Brow Parody Movie That Happens Every Year">Low Brow Parody Movie That Happens Every Year</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Choose One</label>
+                            <select name="age" id="age" class="form-control">
+                                <option value = "0">Adult</option>
+                                <option value = "1">Child</option>
+                                <option value = "1">Senior</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Choose Showing</label>
+                            <select name="time" id="movie-time" class="form-control">
+                                <option value = "3">3:00pm</option>
+                                <option value = "7">7:00pm</option>
+                                <option value = "9">9:00pm</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn">Purchase ticket</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <div id="show-ticket">
+                        <h2>Your ticket</h2>
+                        <p>Movie: <span class="movie"></span></p>
+                        <p>Showtime <span class="showtime"></span></p>
+                        <p>Price: $<span class="price"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
