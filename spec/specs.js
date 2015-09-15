@@ -26,4 +26,14 @@ describe('Ticket', function() {
         var testTicket = new Ticket("Iron Man 5", false, 5, 70);
         expect(testTicket.ticketPrice()).to.equal(7);
     });
+
+    it("adjusts the ticket price based on multiple factors", function() {
+        var testTicket = new Ticket("Iron Man 5", true, 3, 70);
+        expect(testTicket.ticketPrice()).to.equal(7);
+    });
+
+    it("adjusts the ticket price based on multiple factors", function() {
+        var testTicket = new Ticket("Iron Man 5", false, 3, 70);
+        expect(testTicket.ticketPrice()).to.equal(5);
+    });
 });
