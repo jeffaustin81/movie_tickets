@@ -16,5 +16,9 @@ Ticket.prototype.ticketPrice = function() {
         total -= 2;
     }
 
+    if(this.age > 60) {
+        total -= 2;
+    }
+
     return total;
 }
