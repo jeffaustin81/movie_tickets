@@ -8,6 +8,9 @@ function Ticket(movieName, firstRun, movieTime, age) {
 Ticket.prototype.ticketPrice = function() {
     var basePrice = 9;
     var total = basePrice;
+    if(this.firstRun) {
+        total += 2;
+    }
 
     return total;
 }

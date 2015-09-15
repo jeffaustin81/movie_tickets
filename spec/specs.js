@@ -8,7 +8,7 @@ describe('Ticket', function() {
     });
 
     it("adds the ticketPrice method to all contacts", function() {
-        var testTicket = new Ticket("Iron Man 5", true, 7, 79);
+        var testTicket = new Ticket("Iron Man 5", false, 7, 79);
         expect(testTicket.ticketPrice()).to.equal(9);
     });
 
